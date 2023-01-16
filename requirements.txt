@@ -1,0 +1,4 @@
+lxml
+requests
+bs4
+selenium==2.48.0
