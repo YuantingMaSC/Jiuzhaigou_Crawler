@@ -3,9 +3,13 @@
 ### 此爬虫需要用到chromedriver，chromedriver的官网：
 http://chromedriver.storage.googleapis.com/index.html
 进去找到和Chrome版本一致的下载安装
+![image](./imgs/img_2.png)
+![image](./imgs/img.png)
+![image](./imgs/img_1.png)
 
 ### 此外，还需要安装phantomjs
-http://phantomjs.org/download.html找到对应版本的安装
+可以在 http://phantomjs.org/download.html 中找到对应版本的安装
+![image](./imgs/img_3.png)
 
 ### 以上两个windows解压配置路径，linux、macos 放到usr/local/bin中
 
