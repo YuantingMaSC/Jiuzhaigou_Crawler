@@ -6,5 +6,6 @@
 *.iml
 *.json
 *.log
+*.xlsx
 out
 gen
