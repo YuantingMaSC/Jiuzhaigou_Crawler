@@ -4,7 +4,7 @@ Author       : Yuanting Ma
 Github       : https://github.com/YuantingMaSC
 LastEditors  : yuanting 
 Date         : 2024-05-15 10:25:46
-LastEditTime : 2024-05-15 10:30:31
+LastEditTime : 2024-05-15 10:33:56
 FilePath     : /Jiuzhaigou_Crawler/weather_jiuzhaigou.py
 Description  : 
 Copyright (c) 2024 by Yuanting_Ma@163.com, All Rights Reserved. 
@@ -52,11 +52,11 @@ if __name__ == "__main__":
         # print(weather_response)
         for item,loc_num in zip(weather_response,range(len(weather_response))):
             if re.match('.*\d{4}-\d{2}-\d{2}.*', item.text) is None:
-                f = open('./weather.txt', 'a+')
+                f = open(f'./weather_{target}.txt', 'a+')
                 f.write('{},'.format(item.text))
                 f.close()
             else:
-                f = open('./weather.txt', 'a+')
+                f = open(f'./weather_{target}.txt', 'a+')
                 f.write('\n{},'.format(item.text))
                 f.close()
             # print(item.text)
