@@ -1,3 +1,14 @@
+# -*- coding: utf-8 -*-'''
+'''
+Author       : Yuanting Ma
+Github       : https://github.com/YuantingMaSC
+LastEditors  : yuanting 
+Date         : 2024-05-15 10:25:46
+LastEditTime : 2024-05-15 10:30:31
+FilePath     : /Jiuzhaigou_Crawler/weather_jiuzhaigou.py
+Description  : 
+Copyright (c) 2024 by Yuanting_Ma@163.com, All Rights Reserved. 
+'''
 # env    : python
 # coding : utf-8
 
@@ -26,7 +37,9 @@ header = {
 }
 
 if __name__ == "__main__":
-    request_url = 'http://tianqi.2345.com/wea_history/60925.htm'
+    target_site = {'jiuzhaigou':60925, 'siguniangshan':70752}
+    target = 'siguniangshan'
+    request_url = f'http://tianqi.2345.com/wea_history/{target_site[target]}.htm'
     driver = webdriver.PhantomJS()
     driver.get(request_url)
     f = open('./weather.txt','a+')
